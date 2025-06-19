@@ -1,0 +1,7 @@
+{
+  "hello": "Hello, {{name}}!",
+  "changeLanguage": "Change language to Russian",
+  "dashboardTitle": "User Dashboard",
+  "status": "Status",
+  "profile": "My profile"
+}

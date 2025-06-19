@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.visually-hidden {
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  padding-inline: var(--page-side-space);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.h-line {
+  border-bottom: 1px solid var(--primary-text-color);
+  margin-inline: var(--page-side-space);
+}
+
+.h-line-first {
+  @media (width > 36rem) {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-img-after {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-size: contain;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.bg-img-rings {
+  &::after {
+    background-image: url("../public/images/pattern-rings.svg");
+    width: 530px;
+    aspect-ratio: 530 / 129;
+  }
+
+  @media (width <=36rem) {
+    &::after {
+      max-width: 530px;
+      width: 142%;
+    }
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bg-img-circle {
+  &::after {
+    background-image: url("../public/images/pattern-circle.svg");
+    width: 129px;
+    aspect-ratio: 129 / 129;
   }
-  to {
-    transform: rotate(360deg);
+
+  @media (width <=36rem) {
+    &::after {
+      max-width: 129px;
+      width: 75%;
+    }
   }
+}
+
+.btn {
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--accent-color);
+  padding-block: 0.625rem;
+  letter-spacing: 0.142875em;
+  line-height: 162.5%;
+  font-weight: 700;
+  display: inline-block;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.btn-submit {
+  color: var(--primary-text-color);
+  margin-block-start: 1.5rem;
+  float: right;
 }
