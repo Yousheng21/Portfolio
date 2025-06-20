@@ -86,7 +86,6 @@
     height: 1.5rem;
     right: 0;
     bottom: 1.125rem;
-    background-image: url("../../../public/images/icon-invalid.svg");
     visibility: hidden;
   }
 

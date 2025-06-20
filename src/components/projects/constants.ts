@@ -14,21 +14,21 @@ interface IData {
 export const data: IData[] = [
   {
     title: "Dogma",
-    description: "Официальный сайт строительной компании Догма",
+    description: "projects_description.dogma",
     path: "/images/dogma.gif",
     tags: ["React", "Typescript", "NextJS"],
     links: { project: "https://dogma.ru/", code: "" },
   },
   {
     title: "DogmaTime",
-    description: "Платформа для организации работы компании",
+    description: "projects_description.dogmatime",
     path: "/images/dogmatime.gif",
     tags: ["React", "React Native", "Typescript", "Redux"],
     links: { project: "https://app.dogmatime.ru/", code: "" },
   },
   {
     title: "Metalgo",
-    description: "Сайт для продажи и расчета цены любых видов металла",
+    description: "projects_description.metalgo",
     path: "/images/metalgo.gif",
     tags: ["React", "Typescript", "NextJS"],
     links: { project: "https://metalgo.biz/", code: "" },

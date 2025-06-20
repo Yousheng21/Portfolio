@@ -2,8 +2,11 @@ import React from "react";
 import "./projects.css";
 import { data, projectTitleVariants, projectVariants } from "./constants";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       id="projects"
@@ -17,7 +20,7 @@ export const Projects = () => {
           variants={projectTitleVariants}
           className="projects-header"
         >
-          <h2 className="heading heading-xl">Projects</h2>
+          <h2 className="heading heading-xl">{t("projects")}</h2>
         </motion.header>
 
         <div className="projects-list">
@@ -48,7 +51,7 @@ export const Projects = () => {
                   {project.title}
                 </h3>
                 <span> - </span>
-                <p className="project-desc">{project.description}</p>
+                <p className="project-desc">{t(project.description)}</p>
               </div>
 
               <p className="project-tags">{project.tags.join(",  ")}</p>
@@ -60,11 +63,11 @@ export const Projects = () => {
                   rel="noreferrer"
                   className="btn"
                 >
-                  View project
+                  {t("view_project")}
                 </a>
                 {project.links.code && (
                   <a href="https://github.com/" className="btn">
-                    View code
+                    {t("view_code")}
                   </a>
                 )}
               </div>

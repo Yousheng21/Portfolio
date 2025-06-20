@@ -4,7 +4,7 @@ import "./switchLng.css";
 
 export const LanguageSwitcher = () => {
   const [switchCheckbox, setSwicthCheckbox] = useState(false);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const changeLanguage = async (lang: "en" | "ru") => {
     await i18n.changeLanguage(lang);
@@ -13,7 +13,7 @@ export const LanguageSwitcher = () => {
 
   return (
     <label htmlFor="switch" className="switch">
-      <span className="switch-title">Langauage: </span>
+      <span className="switch-title">{t("language")}: </span>
       <input
         type="checkbox"
         id="switch"

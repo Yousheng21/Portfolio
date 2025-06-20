@@ -2,8 +2,11 @@ import React from "react";
 import "./skills.css";
 import { data, skillsTitleVariants, skillsVariants } from "./constants";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       id="skills"
@@ -14,8 +17,8 @@ export const Skills = () => {
     >
       <div className="wrapper skills-wrapper">
         <motion.div variants={skillsTitleVariants} className="skills-title">
-          <h1>Skills</h1>
-          <span>Технологии, с которыми я знаком, и работаю по сей день</span>
+          <h1>{t("skills")}</h1>
+          <span>{t("skills-description")}</span>
         </motion.div>
         <motion.ul variants={skillsVariants} className="skills-list">
           {data.map((skill) => (

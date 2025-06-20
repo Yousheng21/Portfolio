@@ -1,7 +1,35 @@
 {
-  "hello": "Hello, {{name}}!",
-  "changeLanguage": "Change language to Russian",
-  "dashboardTitle": "User Dashboard",
   "status": "Status",
-  "profile": "My profile"
+  "search_work": "In search remote or office work",
+  "language": "Langauage",
+  "hello": "Nice to meet you! I'm",
+  "my_name": "Vladimir",
+  "my_description": "I'm a front-end programmer, developing mobile and web applications with love",
+  "my_tagline": {
+    "one": "I love snowboarding ⛷️",
+    "two": "I practice ⚽️",
+    "three": "I_like_to_code.ts",
+    "four": "And I'm addicted to ☕️"
+  },
+  "contact_me": "Contact me",
+  "download_resume": "Download resume .pdf",
+  "skills": "Skills",
+  "skills-description": "Technologies with which I am familiar, and work to this day",
+  "projects": "Projects",
+  "projects_description": {
+    "dogma": "The official website of the construction company Dogma",
+    "dogmatime": "A platform for organizing the company's work",
+    "metalgo": "A website for selling and calculating the price of any type of metal"
+  },
+  "contact": "Contact",
+  "contact_info": "I would love to answer on your questions. Please fill in the form, and I'll get back to you as soon as possible.",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "send_message": "Send Message",
+  "sending": "Sending...",
+  "sending_success": "Message was send!",
+  "sending_error": "Message doesn't was send!",
+  "view_project": "View project",
+  "view_code": "View code"
 }

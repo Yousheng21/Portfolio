@@ -5,8 +5,11 @@ import { motion } from "framer-motion";
 import "./contact.css";
 import { contactLeftVariants, contactRightVariants } from "./constants";
 import { Loader } from "../../ui/Loader";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation();
+
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setisSuccess] = useState<undefined | boolean>(undefined);
   const [toSend, setToSend] = useState({
@@ -19,7 +22,6 @@ export const Contact = () => {
     e.preventDefault();
 
     setIsLoading(true);
-
     try {
       await send(
         "service_oxgj04q",
@@ -62,12 +64,9 @@ export const Contact = () => {
           variants={contactLeftVariants}
           className="contact-header"
         >
-          <h2 className="heading heading-xl">Contact</h2>
+          <h2 className="heading heading-xl">{t("contact")}</h2>
 
-          <p className="sub-heading contact-sub-h">
-            I would love to hear about your project and how I could help. Please
-            fill in the form, and I'll get back to you as soon as possible.
-          </p>
+          <p className="sub-heading contact-sub-h">{t("contact_info")}</p>
         </motion.header>
 
         <motion.form
@@ -80,7 +79,7 @@ export const Contact = () => {
               type="text"
               id="name"
               name="name"
-              placeholder="Name"
+              placeholder={t("name")}
               autoComplete="name"
               className="first-input"
               required
@@ -94,7 +93,7 @@ export const Contact = () => {
               type="email"
               id="email"
               name="email"
-              placeholder="Email"
+              placeholder={t("email")}
               autoComplete="email"
               required
               value={toSend.email}
@@ -108,7 +107,7 @@ export const Contact = () => {
               id="message"
               cols={30}
               rows={3}
-              placeholder="Message"
+              placeholder={t("message")}
               required
               value={toSend.message}
               onChange={handleChange}
@@ -130,7 +129,7 @@ export const Contact = () => {
                   color: isSuccess ? "var(--accent-color)" : "red",
                 }}
               >
-                {isSuccess ? "Message was send!" : "Message don't send!"}
+                {isSuccess ? t("sending_success") : t("sending_error")}
               </span>
             )}
             <button
@@ -138,7 +137,7 @@ export const Contact = () => {
               type="submit"
               className="btn btn-submit"
             >
-              {isLoading ? "Loading" : "Send Message"}
+              {isLoading ? t("sending") : t("send_message")}
             </button>
             {isLoading && (
               <Loader style={{ width: 25, height: 35, marginBottom: 5 }} />

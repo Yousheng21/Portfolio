@@ -11,9 +11,7 @@ export const Header = () => {
       <div className="wrapper header-wrapper">
         <div className="links-bar">
           <div aria-label="Adam Keyes">
-            <span className="status"><b>{t("status")}:</b> in search remote or office work</span>
-            {/* <span className="sub-status">{t("status")}: </span>
-            <span className="status">in search remote or office work</span> */}
+            <span className="status"><b>{t("status")}:</b> {t("search_work")}</span>
           </div>
 
           <div className="social-links">

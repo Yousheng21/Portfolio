@@ -67,6 +67,11 @@
   }
 }
 
+.hero-info {
+  font-size: clamp(1rem, 1.5rem, 2rem);
+  min-height: 30.5px;
+}
+
 .hero-headline {
   @media (width > 36rem) {
     width: min(113%, 13ch);

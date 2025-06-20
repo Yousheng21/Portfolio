@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="wrapper footer-wrapper">
         <div className="links-bar">
           <a href="#" className="logo">
-            adamkeyes
+            Vladimir Ermachenkov
           </a>
 
           <div className="social-links">
