@@ -41,8 +41,12 @@
   margin: 0;
   font-size: 3rem;
   background-image: linear-gradient(to right, var(--accent-color) 75%, var(--accent-color) 75%);
-  background-position: 0 1.2em;
+  background-position: 0 2.5em;
   background-repeat: repeat-x;
+
+  @media (width > 36rem) {
+     background-position: 0 1.2em;
+  }
 }
 
 .skills-title span {
