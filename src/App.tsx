@@ -4,7 +4,7 @@ import { Header } from "./ui/header/Header";
 import { Projects, Contact, Hero, Skills } from "./components";
 import { Footer } from "./ui/footer/Footer";
 
-import "./app.css";
+import "./App.css";
 
 function App() {
   return (
