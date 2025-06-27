@@ -7,12 +7,13 @@
   "my_description": "I'm a front-end programmer, developing mobile and web applications with love",
   "my_tagline": {
     "one": "I love snowboarding ⛷️",
-    "two": "I practice ⚽️",
+    "two": "I practice volleyball ⚽️",
     "three": "I_like_to_code.ts",
-    "four": "And I'm addicted to ☕️"
+    "four": "And I'm addicted to music"
   },
   "contact_me": "Contact me",
   "download_resume": "Download resume .pdf",
+  "examples_code": "Examples of code",
   "skills": "Skills",
   "skills-description": "Technologies with which I am familiar, and work to this day",
   "projects": "Projects",
@@ -31,5 +32,6 @@
   "sending_success": "Message was send!",
   "sending_error": "Message doesn't was send!",
   "view_project": "View project",
-  "view_code": "View code"
+  "view_code": "View code",
+  "view_mobile_project": "View mobile version"
 }

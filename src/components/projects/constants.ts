@@ -8,6 +8,7 @@ interface IData {
   links: {
     project: string;
     code?: string;
+    projectMobile?: string; 
   };
 }
 
@@ -24,7 +25,7 @@ export const data: IData[] = [
     description: "projects_description.dogmatime",
     path: "/images/dogmatime.gif",
     tags: ["React", "React Native", "Typescript", "Redux"],
-    links: { project: "https://app.dogmatime.ru/", code: "" },
+    links: { project: "https://app.dogmatime.ru/", projectMobile: "https://apps.apple.com/ru/app/dogma-time/id6446031620", code: "" },
   },
   {
     title: "Metalgo",

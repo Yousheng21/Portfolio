@@ -70,6 +70,16 @@ export const Projects = () => {
                     {t("view_code")}
                   </a>
                 )}
+                {project.links.projectMobile && (
+                  <a
+                    href={project.links.projectMobile}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn"
+                  >
+                    {t("view_mobile_project")}
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}

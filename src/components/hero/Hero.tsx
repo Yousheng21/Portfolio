@@ -27,9 +27,7 @@ export const Hero = () => {
             <span>{t("hello")}</span> <span>{t("my_name")}</span>.
           </h3>
 
-          <p className="sub-heading hero-caption">
-            {t("my_description")}
-          </p>
+          <p className="sub-heading hero-caption">{t("my_description")}</p>
           <span className="hero-info">
             {text}
             <Cursor cursorColor="var(--accent-color)" />
@@ -43,7 +41,15 @@ export const Hero = () => {
             target="_blank"
             rel="noreferrer"
           >
-           {t("download_resume")}
+            {t("download_resume")}
+          </a>
+          <a
+            href={"https://disk.yandex.ru/d/ZwNuzSlHFo1xxw"}
+            className="btn-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t("examples_code")}
           </a>
         </div>
       </div>
